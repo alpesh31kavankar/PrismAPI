@@ -81,7 +81,7 @@ namespace PrismAPI.DAL
             MySqlConnection con = conn.OpenDbConnection();
             MySqlCommand cmd = new MySqlCommand("AddProdType", con);
             //cmd.Parameters.Add("Id", MySqlDbType.Int).Value = wishlist.Id;
-            //clone
+            
 
             cmd.Parameters.Add("p_Title", MySqlDbType.VarChar).Value = prodType.Title;
             cmd.Parameters.Add("p_SubTitle", MySqlDbType.VarChar).Value = prodType.SubTitle;
